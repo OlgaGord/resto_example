@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- 
+Nom : Gordeyeva Olga 
+Projet : Cours Création de sites Web –TP#1 
+Organisation : Collège de Maisonneuve 
+Page : recette.html 
+Date création : 2018-04-08
+Description : La page des recettes grecques. 
+-->
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="discription" content="Un site sur restaurant"/>
+	<meta name="Keywords" content="Restaurant, nourriture, bon repas"/>
+	<!-- Mobile viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="home"> 
+<div class="wrapper">
+	<div class="recherche">
+	    <form class="search_forme">
+		    <input type="search" class="search_input" name="recherche" placeholder="Rechercher">	
+			&#128269; &nbsp;
+	    </form>
+	</div>
+<!--Entête-->
+<header class="header_small header_medium header_grand">
+	<div class="logo" id="img_transform" >
+		<a href="#"><img class="img_logo" title="logo" alt="L'image de logo" src="../images/logo_small.png"/></a>
+	</div>
+<!--Menu principal-->	
+	<div class="topnav">
+		<label for="toggle">&#9776;</label>
+		<input type="checkbox" id="toggle"/>
+	<!--Navigation -->
+		<div class="menu">
+		   	<a href="../index.html">Accueil</a>
+	   		<a href="#">Recettes</a>
+			<a href="carte.html">La carte</a>
+			<a href="contact.html">Contacts</a>
+		</div>
+	</div>
+<!-- l'image principale avec le message-->
+<div class="div_img_accueil" data-title="Petits Déjeuners délicieux"> 
+	<a href="carte.html"><img class="img_accueil" title="La nourriture" alt="L'image de la nourriture" src="../images/principal1.jpg"/></a>
+</div> 
+</header>
+<!-- fin entête -->
+<section class="rest_information">
+<!-- Les conteneurs pour les recettes -->
+	<div class="conteneur_equipe">
+		<h1 class="h1_equipe">Recettes grecques</h1>
+<div class="stories" id="story_id">
+	<div class="equipe">
+		<div class="outer-wrapper">
+			<div class="inner-wrapper">
+	   			<a href="#openModal" class="personne"><img src="../images/musaka1.jpg" alt="Musaka"><span class="title">Musaka</span></a>
+			</div>
+  		</div>
+ 	</div>
+<div class="equipe">
+	<div class="outer-wrapper">
+   		<div class="inner-wrapper">
+     		<a href="#openModal2" class="personne"><img src="../images/marinade1.jpg" alt="Marinade Grecque BBQ"><span class="title">Marinade BBQ</span></a>
+  		</div>
+  	</div>
+</div>
+<div class="equipe">
+	<div class="outer-wrapper">
+  		<div class="inner-wrapper">
+  			<a href="#openModal3" class="personne"><img src="../images/salade1.jpg" alt="Salade Grecque"><span class="title">Salade Gresque</span></a>
+  		</div>
+  	</div>
+</div>
+</div>
+</div>
+<!-- L'information à propos des ingradients et les méthodes de préparation en fenêtres Modal-->
+<div class="modalDialog" id="openModal"> 
+	<a href="#close" title="Close" class="close">X</a>
+	   <div class="modal-body">
+			<h1 class="started_story">MOUSSAKA TYPIQUE DES GRECS</h1>
+	   	<div class="text_container">
+		  <div class="text">
+			<span class="question">NGRÉDIENTS</span>
+<p>625 mL lait <br>
+1 cuillère à table beurre<br>
+3 oeufs<br>
+4 cuillères à table farine<br>
+1/2 cuillère à thé sel<br>
+Moussaka :
+3 grosses aubergines de 1 lb pelées et coupées sur la longueur en tranches de 1/2 pouce d'épaisseur
+sel<br>
+1 tasse farine<br>
+300 mL huile d'olive<br>
+2 oignons hachés finement<br>
+2 lb agneaux maigre haché<br>
+3 moyennes tomates pelées, épépinées et finement hachées<br>
+1 tasse tomate broyée<br>
+1 cuillère à thé ail finement haché<br>
+1 cuillère à thé origan séché<br>
+1/2 cuillère à thé cannelle<br>
+1 cuillère à thé sel<br>
+poivre noir fraîchement moulu<br>
+6 cuillères à table fromage parmesan fraîchement râpé<br>
+</p>
+	<span class="question">PRÉPARATION</span>
+<p> 
+ÉTAPE 1
+Salez légèrement les tranches d'aubergine et étalez-les côte à côte sur un papier absorbant. Posez une grosse assiette lourde sur le dessus. Laissez dégorger durant 20 à 30 minutes, puis séchez-les avec des serviettes de papier.<br>
+ÉTAPE 2<br>
+Roulez les tranches d'aubergine dans la farine et retirez l'excédent en les secouant.<br>
+ÉTAPE 3<br>
+Faites chauffer sur un feu vif dans un poêlon épais 8 c. à soupe d'huile d'olive. Faites revenir les tranches d'aubergine et faites dorer uniformément sur toutes les faces durant 1 à 2 minutes. Égouttez les aubergines sur du papier absorbant.<br>
+ÉTAPE 4<br>
+Faites revenir les oignons dans de l'huile d'olive sur feu moyen durant 8 à 10 minutes ou jusqu'à ce qu'ils soient dorés et tendres.<br>
+ÉTAPE 5<br>
+Ajoutez l'agneau haché à la poêle avec les oignons en l'écrasant avec le dos d'une cuillère. Laissez cuire jusqu'à ce que tout le rose soit disparu.<br>
+ÉTAPE 6<br>
+Ajoutez dans le poêlon les tomates, la purée de tomates, l'ail, l'origan, la cannelle, le sel et le poivre. Portez à ébullition. Tout en remuant de temps en temps, laissez cuire assez longtemps pour faire évaporer le liquide et épaissir le mélange (devrait rester sur la cuillère). Goûtez et rectifiez l'assaisonnement au besoin.<br>
+ÉTAPE 7<br>
+Préparation de la béchamel : faites chauffer 3/4 du lait avec le beurre dans une petite casserole. Retirez du feu dès que les bulles se forment sur le pourtour.<br>
+ÉTAPE 8<br>
+Dans une grande casserole, battez les oeufs, le reste du lait, la farine et le sel jusqu'à homogénéité. Chauffez sur un feu moyen tout en battant au fouet. Ajoutez lentement le mélange de lait et de beurre en mince filet. Faites cuire sans cesser de remuer jusqu'à épaississement, puis retirez du feu.<br>
+ÉTAPE 9<br>
+Faites chauffer le four à 325 °F et préparez la moussaka comme suit : une rangée d'aubergines se chevauchant, 2 c. à soupe de fromage parmesan, la viande aux tomates, une rangée d'aubergines, du fromage parmesan et la béchamel.<br>
+ÉTAPE 10<br>
+Faites cuire sur la grille centrale du four pendant 30 minutes, puis augmentez la température à 400°F. Prolongez la cuisson de 15 minutes encore pour faire dorer la surface. Retirez du four et laissez refroidir la moussaka à température ambiante pendant 5 à 10 minutes avant de servir.<br>
+</p>
+			</div>
+		</div>
+	</div>
+  </div>	  	
+  
+  <div class="modalDialog2" id="openModal2"> 
+	<a href="#close" title="Close" class="close">X</a>
+	   <div class="modal-body">
+		  <h1 class="started_story">MARINADE À LA GRECQUE (BBQ)</h1>
+	   
+		<div class="text_container">
+		  <div class="text">
+			  <span class="question">NGRÉDIENTS</span>
+<p>3 cuillères à table mayonnaise<br>
+2 cuillères à table origan<br>
+1/4 tasse huile<br>
+3 cuillères à table jus de citron<br>
+1 cuillère à thé poudre d'oignon<br>
+1 cuillère à thé ail<br>
+1 cuillère à thé moutarde de Dijon<br>
+1 cuillère à thé bouillon de poulet en poudre<br>
+sel au goût<br>
+poivre au goût<br>
+</p>
+ 	<span class="question">PRÉPARATION</span>
+<p>ÉTAPE 1<br>
+Mélanger tous les ingrédients ensemble.<br>
+NOTE(S) DE L'AUTEUR :<br>
+Cette marinade est délicieuse pour brochettes et poitrines de poulet. </p><br>
+  												 
+			</div>
+		</div>
+	</div>
+  </div>	  	
+  <div class="modalDialog3" id="openModal3"> 
+	<a href="#close" title="Close" class="close">X</a>
+	   <div class="modal-body">
+		  <h1 class="started_story">SALADE GRECQUE</h1>
+	   
+		<div class="text_container">
+		  <div class="text">
+			<span class="question">NGRÉDIENTS</span>
+<p>5 grosses tomates en grappe coupées en quartiers<br>
+1/2 oignon rouge émincé
+du sel<br>
+1,5 cuillères à café d'origan séché<br>
+1/2 concombre coupé en fines tranches<br>
+1 poivron vert émincé<br>
+1 poignée d'olives kalamata<br>
+100 g de feta émiettée<br>
+3 cuillères à soupe d'huile d'olive<br>
+</p>
+<span class="question">PRÉPARATION</span>
+<p> 10minutes  ›  Temps supplémentaire : 30minutes pour reposer  ›  Prêt en :40minutes <br>
+1. Mettre les tomates et l'oignon dans un saladier. Assaisonner de sel, d'origan et laisser reposer entre 30 minutes à 2 heures.<br>
+2. Avant de servir, ajouter le concombre, le poivron, les olives et la feta. Arroser d'huile d'olive et mélanger. Servir avec du pain frais et croustillant.</p>
+					
+			</div>
+		</div>
+	</div>
+  </div>	  
+</section>
+<!-- Section footer -->
+<footer>
+<!-- L'information à propos des sources où j'ai télécharger les fichiers sources  -->
+<div class="sign_div">
+		<a class="home" href="#home">Menu principal</a><br>
+		<h5>Sources:</h5>
+		<a class="sources" href="http://www.recettes.qc.ca/dossiers/cuisine-du-monde/dossier/grece-3">Cusine greque du Québec</a><br>
+		<a class="sources" href="http://allrecipes.fr/recettes/tag-4033/recette-grecque-facile.aspx">Recettes grecques faciles </a><br>
+		<a class="sources" href="https://www.atelierdeschefs.fr/blog/la-cuisine-cest-une-histoire-de-famille-temoignage-de-perrine-dubail-chef-a-latelier-des-chefs">
+		Les images des membres d'équipe</a><br>
+		<a class="sources" href="https://news.peninsula.com/en/new-york/news/story/10155-the-peninsula-new-york-announces-new-appointments-in-the-kitchen/">
+		Les images des membres d'équipe</a><br>
+		<a class="sources" href="http://www.cuisinezenville.com/veste-de-cuisine-differents-styles-pour-toutes-les-personnalites.html">
+		Les images des membres d'équipe</a><br>
+		<a class="sources" href="http://www.getnowapp.com/how-to-get-the-most-of-spices-and-herbs-when-cooking/">
+		L'image de la page d'acceuil</a><br>
+		<a class="sources" href="https://www.google.ca/search?q=%D0%B1%D0%BB%D1%8E%D0%B4%D0%B0&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig_eb-iK7aAhWFdN8KHYX4BU8Q_AUICigB&biw=1536&bih=720#imgrc=Mpt5PzBHXmckhM:">L'image de les pages de recettes et carte</a><br>
+		<a class="sources" href="https://www.google.ca/search?q=%D0%B1%D0%BB%D1%8E%D0%B4%D0%B0&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig_eb-iK7aAhWFdN8KHYX4BU8Q_AUICigB&biw=1536&bih=720#imgdii=YreiDj3WsYBN7M:&imgrc=OeBcdgKGpYDDkM:">L'image de la page de contacts</a><br>
+		Les Images pour la carte ont été pris du livre de "Simply Plated!" 2006 de Diane Kochilas.<br>
+		<a href="http://www.facebook.com">
+			<img class="sign_images" src="../images/social-networks2.png" alt="image réseaux sociaux" title="réseaux sociaux">
+		</a>
+		<div class="footer_div">
+			<span class="footer_span"> Web, logo par Olga Gordeyeva&nbsp; &copy; Copyrights &nbsp; 2018</span><br>
+		</div>
+</div>
+</footer>
+</div>
+<!-- Fin de section footer -->
+</body>
+</html>

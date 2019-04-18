@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- 
+Nom : Gordeyeva Olga 
+Projet : Cours Création de sites Web –TP#1 
+Organisation : Collège de Maisonneuve 
+Page : index.html 
+Date création : 2018-04-08
+Description : La page d'un site de resto. 
+-->
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="discription" content="Un site sur restaurant"/>
+	<meta name="Keywords" content="Restaurant, nourriture, bon repas"/>
+	<!-- Mobile viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home"> 
+<div class="wrapper">
+	<div class="recherche">
+	    <form class="search_forme">
+		    <input type="search" class="search_input" name="recherche" placeholder="Rechercher">	
+			&#128269; &nbsp;
+	    </form>
+	</div>
+<!--Entête-->
+<header class="header_small header_medium header_grand">
+	<div class="logo" id="img_transform" >
+		<a href="#"><img class="img_logo" alt="L'image de LOGO" title="logo" src="images/logo_small.png"/></a>
+	</div>
+<!--Menu principal-->	
+	<div class="topnav">
+
+	    <label for="toggle">&#9776;</label>
+	    <input type="checkbox" id="toggle"/>
+	<!--Navigation -->
+	<div class="menu">
+		<a href="#">Accueil</a>
+	   	<a href="html/recette.html">Recettes</a>
+		<a href="html/carte.html">La carte</a>
+		<a href="html/contact.html">Contacts</a>
+	</div>
+	</div>
+<div class="div_img_accueil" data-title="Petits Déjeuners délicieux"> 
+	<a href="html/carte.html"><img class="img_accueil" title="La nourriture" alt="L'image de la nourriture" src="images/cook1.jpg"/></a>
+</div> 
+</header><!-- fin entête -->
+<main>
+<!-- L'information à propos memebres d'équipe -->
+<section class="rest_information">
+	<div class="conteneur_equipe">
+		<h1 class="h1_equipe">Notre Équipe</h1>
+<div class="stories" id="story_id">
+	<div class="equipe">
+		<div class="outer-wrapper">
+			<div class="inner-wrapper">
+	   			<a href="#openModal" class="personne"><img src="images/personne1.jpg" alt="Name1 image"><span class="title">Nom1</span></a>
+			</div>
+  		</div>
+ 	</div>
+<div class="equipe">
+	<div class="outer-wrapper">
+   		<div class="inner-wrapper">
+     		<a href="#openModal2" class="personne"><img src="images/personne2.jpg" alt="Name2 image"><span class="title">Nom2</span></a>
+  		</div>
+  	</div>
+</div>
+<div class="equipe">
+	<div class="outer-wrapper">
+  		<div class="inner-wrapper">
+  			<a href="#openModal3" class="personne"><img src="images/personne3.jpg" alt="Name3 image"><span class="title">Nom3</span></a>
+  		</div>
+  	</div>
+</div>
+</div>
+</div>
+<!-- L'information à propos de membres d'équipes fait en Fenêtres modal-->
+<!-- Cela fait comme l'intreview avec cusiniers-->
+<div class="modalDialog" id="openModal"> 
+	<a href="#close" title="Close" class="close">X</a>
+	   <div class="modal-body">
+			<h1 class="started_story">Nom1 commencé en équipe: 2013</h1>
+	   
+		<div class="text_container">
+		  <div class="text">
+			<span class="question">Q: Question1?</span>
+			<p><span class="answer">A:</span>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+			</p>
+
+			<span class="question">Q: Question2?</span>
+			<p><span class="answer">A:</span>  Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. </p>
+
+			<span class="question">Q: Question3?</span>
+			<p><span class="answer">A:</span>Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte,
+			comme Aldus PageMaker.</p>
+			</div>
+		</div>
+	</div>
+  </div>	  	
+  
+  <div class="modalDialog2" id="openModal2"> 
+	<a href="#close" title="Close" class="close">X</a>
+	   <div class="modal-body">
+		  <h1 class="started_story">Nom2 commencé en équipe: 2012</h1>
+	   
+		<div class="text_container">
+		  <div class="text">
+			  <span class="question">Q: Question1?</span>
+					<p><span class="answer">A:</span>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+					</p>
+  					<span class="question">Q: Question2?</span>
+					<p><span class="answer">A:</span>  Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. </p>
+  
+					<span class="question">Q: Question3?</span>
+					<p><span class="answer">A:</span>Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte,
+					comme Aldus PageMaker.</p>
+			</div>
+		</div>
+	</div>
+  </div>	  	
+  <div class="modalDialog3" id="openModal3"> 
+	<a href="#close" title="Close" class="close">X</a>
+	   <div class="modal-body">
+		  <h1 class="started_story">Nom3 commencé en équipe: 2014</h1>
+		<div class="text_container">
+		  <div class="text">
+			<span class="question">Q: Question1?</span>
+			<p><span class="answer">A:</span>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.
+			</p>
+			<span class="question">Q: Question2?</span>
+			<p><span class="answer">A:</span>  Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. </p>
+
+			<span class="question">Q: Question3?</span>
+			<p><span class="answer">A:</span>Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte,
+			comme Aldus PageMaker.</p>
+			</div>
+		</div>
+	</div>
+  </div>	  
+</section>
+<!-- Section à propos de Spécialités de resto -->
+<section>
+	<div class="desctiption">
+		<h1 class="h1_specialite">Nos Spécialités</h1>
+		<div class="column3 column2 column1">
+			<p>
+					Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+					Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla 
+					ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles,
+					mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années
+					1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des 
+					applications de mise en page de texte, comme Aldus PageMaker.
+	
+					Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+					Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla 
+					ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles,
+					mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années
+					1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des 
+					applications de mise en page de texte, comme Aldus PageMaker.
+	
+		
+					Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+					Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla 
+					ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles,
+					mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années
+					1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des 
+					applications de mise en page de texte, comme Aldus PageMaker.
+			</p>
+	    </div>
+	</div>
+</section>
+<section>
+
+<div class="caracteristique">
+	<h1 class="h1_caractéristique">Caractéristiques</h1>
+	<div class="column2_c column1_c">
+		<p class="p_caracterictique">
+			Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. 
+			Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla 
+			ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles,
+			mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années
+			1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des 
+			applications de mise en page de texte, comme Aldus PageMaker.		
+		</p>
+	</div>
+</div> 
+</section>
+</main>
+<footer>
+	<div class="sign_div">
+			<a class="home" href="#home">Menu principal</a><br>
+			<h5>Sources:</h5>
+			<a class="sources" href="http://www.recettes.qc.ca/dossiers/cuisine-du-monde/dossier/grece-3">Cusine greque du Québec</a><br>
+			<a class="sources" href="http://allrecipes.fr/recettes/tag-4033/recette-grecque-facile.aspx">Recettes grecques faciles </a><br>
+			<a class="sources" href="https://www.atelierdeschefs.fr/blog/la-cuisine-cest-une-histoire-de-famille-temoignage-de-perrine-dubail-chef-a-latelier-des-chefs">
+			Les images des membres d'équipe</a><br>
+			<a class="sources" href="https://news.peninsula.com/en/new-york/news/story/10155-the-peninsula-new-york-announces-new-appointments-in-the-kitchen/">
+			Les images des membres d'équipe</a><br>
+			<a class="sources" href="http://www.cuisinezenville.com/veste-de-cuisine-differents-styles-pour-toutes-les-personnalites.html">
+			Les images des membres d'équipe</a><br>
+			<a class="sources" href="http://www.getnowapp.com/how-to-get-the-most-of-spices-and-herbs-when-cooking/">
+			L'image de la page d'acceuil</a><br>
+			<a class="sources" href="https://www.google.ca/search?q=%D0%B1%D0%BB%D1%8E%D0%B4%D0%B0&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig_eb-iK7aAhWFdN8KHYX4BU8Q_AUICigB&biw=1536&bih=720#imgrc=Mpt5PzBHXmckhM:">L'image de les pages de recettes et carte</a><br>
+			<a class="sources" href="https://www.google.ca/search?q=%D0%B1%D0%BB%D1%8E%D0%B4%D0%B0&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig_eb-iK7aAhWFdN8KHYX4BU8Q_AUICigB&biw=1536&bih=720#imgdii=YreiDj3WsYBN7M:&imgrc=OeBcdgKGpYDDkM:">L'image de la page de contacts</a><br>
+			Les Images pour la carte ont été pris du livre de "Simply Plated!" 2006 de Diane Kochilas.<br>
+			<a href="http://www.facebook.com">
+				<img class="sign_images" src="images/social-networks2.png" alt="image réseaux sociaux" title="réseaux sociaux">
+			</a>
+		<div class="footer_div">
+			<span class="footer_span"> Web, logo par Olga Gordeyeva&nbsp; &copy; Copyrights &nbsp; 2018</span><br>
+		</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>
+
+
+

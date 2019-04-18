@@ -1,0 +1,1067 @@
+html {
+	position: relative;
+	width: 100%;
+	height:auto;
+}
+/*Topographie, large, position pour body */
+body {
+	background-color: #2a4f62;
+	margin: 0 auto;
+	width:100%;
+	color:white;
+	font-family:'Trajan Pro', Arial, Helvetica, sans-serif; 
+	font-size:1em;
+	line-height:1.4em; 
+	position: relative;
+	height: auto;
+
+}
+/*large pour wrapper 80%, tout le contenus est interieur*/
+.wrapper {
+	width:80%;
+	margin: 0 auto;
+	height:auto;
+	position: relative;
+}
+
+main {
+	width:100%;
+	margin: 0 auto;
+	height:auto;
+}
+
+/*hauteur pour header, cela varie avec les vérsions*/
+header {
+	height:35em;
+	position: relative;
+	margin: auto;
+}
+
+/*Footer*/
+footer {
+	clear:both;
+	margin: 0 auto;
+	margin-top: 1%;
+	text-align: center;
+	position: relative;
+	bottom:0;
+	width:100%;
+	height:auto;
+	color: white;
+	margin-bottom: 0;
+	bottom:0;
+}
+
+/*Topographie*/
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+	font-family:'Trajan Pro', Arial, Helvetica, sans-serif; 
+	line-height:1.5em;
+	margin:.45em 0;
+	padding:0;
+} 
+/*La forme de recherche en haut gauche*/
+.recherche {
+	margin-top: 3%;
+	margin-bottom: 2%;
+	margin-left: 0;
+}
+
+.search_input {
+	width:20%;
+	height: 3em;
+ }
+
+/*Images responsives*/
+.img_accueil {
+	display: none;
+	clear: right;
+	width:100%;
+	height:auto;
+	transition: 2s linear;
+}
+
+/*Opacity pour l'image principale avec hover*/
+
+.img_accueil:hover {
+  opacity: .2;
+  border-radius: 20px;
+  
+}
+/*L'image de Logo*/
+
+.logo {
+	/*text-align: left;*/
+    display: none;
+	width:180px;
+	margin: 10px;
+	position: absolute;
+	
+}
+/*annimation de logo*/
+
+#img_transform {
+	transition: transform 3s linear;
+
+}
+
+#img_transform:hover {
+	transform: rotate3d(0, 1, 0, 180deg);
+}
+
+
+.img_logo {
+	margin-left:3%;
+}
+/*Navigation*/
+.topnav {
+
+	text-align: right;
+	height: 100px;
+	line-height: 100px;
+}
+
+.menu {
+	display: none;
+	width: 100%;
+	text-align: center;
+}
+
+/* Style the topnav links */
+.menu a {
+    color: #f2f2f2;
+	margin: 0;
+	display: block;
+    line-height: 100px;
+    font-size: 1.5em;
+    text-align: center;
+	text-decoration: none;
+	border-bottom: 1px solid #EAEAEB;
+}
+/* Changer la couleur de hover */
+.topnav a:hover {
+    color: black;
+}
+/* Taille pour menu hambourger , on affiche hambourger pour version moins  de 481px*/
+label {
+	clear:both;
+	margin: 0 40px 0 0;
+	font-size:50px;
+	line-height: 100px;
+	cursor: pointer;
+	float: right;
+	width: 50px;
+	display: block;
+}
+
+/*click pour menu hambourger*/
+#toggle {
+	opacity: 0;
+	margin: 0 auto;
+	width: 33px;
+	
+}
+#toggle:checked + .menu {
+	display:block;
+
+	}
+
+/* Style pour les images et moduls pour l'équipe */
+
+h1.h1_equipe {
+	text-align: center;
+	padding-bottom: 2em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+/*title de modals */
+
+h1.started_story {
+
+	color: black;
+}
+
+div.div_img_accueil{
+    display: none;
+} 
+
+.stories {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+div.div_img_accueil:after {
+    content: attr(data-zagolovok);
+    display: none;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: center;
+  }
+/*text est divisé en colimns*/
+.column1 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	column-count: 1;
+	column-gap: 2em;
+}
+/*Overflow pour avoir l'effect de mouvement de photos*/
+.equipe {
+	 width: 100%;
+	 overflow: hidden;
+	 margin: 1em;
+	 z-index:1;
+	 color: white;
+	 
+}
+.personne {
+   color:white;
+   text-decoration: none;
+   font-family: TradeGothicLTCom-Bold, Arial,  sans-serif;
+   text-transform: uppercase;
+}
+
+/* title des images d'equipe en span*/
+
+span.title {
+	 position: absolute;
+	 bottom: 0;
+	 left:0;
+	 right:0;
+	 background: black;
+	 opacity: 0.6;
+	 width: 100%;
+	 padding:1em 0;
+	 text-align: center;
+	 z-index: 120000;
+	  }
+  
+  .outer-wrapper {
+	 width:100%;
+	 height: 0;
+	 padding-top: 100%;
+	 position: relative
+  }
+  
+  .outer-wrapper .inner-wrapper {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 right: 0;
+	 bottom: 0
+  }
+  
+  .outer-wrapper img {
+	object-fit: cover;
+	 width: 100%;
+	 height: 100%;
+	 z-index: 2;
+  }
+  
+  .story.outer-wrapper {
+	 box-shadow: inset 0 0 1px #004d34;
+	 overflow: hidden
+  }
+  
+  .equipe img {
+	 -webkit-transition: 1s all;
+	 transition: 1s all
+  }
+  
+  .equipe:hover img {
+	 -webkit-transform: none;
+	 -ms-transform: none;
+	 transform: none;
+  }
+	 
+  .stage {
+	 display: block;
+	 height: 800px; 
+	 padding-left: 15%;
+  
+	 }
+/*Paramètres de modals*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	text-align: left;
+	font-size: 13px;
+	overflow-y: scroll;
+	
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div, .modalDialog2 > div,  .modalDialog3 > div{
+	width: 60%;
+	color: black;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+span.question {
+	font-family: TradeGothicLTCom-Bold;
+    color: #c02820;
+    box-sizing: border-box;
+    font-weight: bolder;
+    
+}
+
+span.answer {
+	color: #593e31;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*Le signe close pour fermer les modals*/
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 5%;
+	text-align: center;
+	top: 5%;
+	width: 28px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+.modalDialog2 {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	text-align: left;
+	font-size: 13px;
+	overflow-y: scroll;
+	
+}
+
+.modalDialog2:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog3 {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	text-align: left;
+	font-size: 13px;
+	overflow-y: scroll;
+	
+}
+
+.modalDialog3:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.description {
+
+width: 100%;
+height: auto;
+
+}
+
+.column1 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	column-count: 1;
+	column-gap: 2em;
+	font-size: 100%;
+	
+}
+
+.h1_specialite {
+	text-align: center;
+	margin: 2%;
+}
+/*Topographie pour le text de caracteristique sur la page d'acceuil*/
+.p_caracterictique {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 100%;
+	/*line-height: 1.5em;*/
+	margin-top:2%;
+	margin-bottom: 2%;
+	margin-left:auto;
+	margin-right: auto;
+	width: 80%;
+	transition: transform 3s linear ;
+	column-count: 2;
+	/*column-gap: 4%;*/
+
+}
+
+.p_caracterictique:hover {
+	/*transform: rotate3d(0, 1, 0, 90deg);*/
+	transform: none;
+}
+
+.h1_caractéristique {
+
+	text-align: center;
+	margin: 2em;
+}
+
+/*Parametres de formulaire*/
+form.message {
+	margin:0 auto;
+	margin-top: 9em;
+	width:80%;
+	text-align: center;
+	padding:2%;
+	border:1px solid #403020;;
+	border-radius: 2em;
+	background-color: white;
+	opacity: 0.7;
+}
+
+form div + div {
+	margin-top:1em;
+}
+/*Pour faire tous les label le meme taille et alignés. */
+
+
+/*Pour faire tous les champs text le meme font settings*/
+
+input, textarea, button {
+	font: 100% Arial, Helvetica, sans-serif;
+	font-style: italic;
+	box-sizing:border-box;
+	border: 1px solid #403020;
+	border-radius: 0.5em;
+	width: 80%;
+}
+
+input, button {
+
+	height: 2em;
+}
+input:hover, textarea:hover{
+	background-color: #F5F4EE;
+}
+
+/*Pour faire un petit lumière à elements actifs*/
+
+input:focus, textarea:focus {
+
+border-color: #000;
+
+}
+
+/*Pour faire aligné textarea element à haut de champs et donner hauteur de champs*/
+textarea {
+	vertical-align: top;
+	height: 6em;
+}
+
+.h3_form {
+	text-align: center;
+	margin: 1%;
+	color: black;
+}
+
+a.home {
+
+	text-decoration: none;
+	color: yellow;
+	font-family: 'Trajan Pro', Arial, Helvetica, sans-serif;;
+}
+
+
+a.sources {
+
+	text-decoration: none;
+	color: white;
+	font-family: 'Trajan Pro', Arial, Helvetica, sans-serif;;
+}
+
+a.home:hover, a.sources:hover {
+	color: black;
+}
+
+/*
+PETITS ÉCRANS
+*/
+ @media only screen and (min-width: 481px){
+
+
+header.header_small {
+	height:30em;
+	position: relative;
+	margin: auto;
+}
+/*
+Cacher l'image principale en version mobile
+*/
+.img_accueil {
+	display: none;
+}
+.logo {
+	
+    display: block;
+	width:180px;
+	margin: 10px;
+	position: absolute;
+
+}
+/*Supprimer les transformations de logo*/
+#img_transform:hover {
+	transform: none;
+}
+
+/*Ne pas afficher menu hambouger mais afficher le menu vertical*/
+label {
+	display: none;
+	cursor: pointer;
+	width: 30px;
+	float: right;
+}
+
+.menu {
+	text-align: center;
+	width:100%;
+	display: block;
+}
+.menu a {
+	clear: right;
+	display: block;
+	border-bottom: 1px solid #EAEAEB;
+	margin: 0;
+}
+
+#toggle {
+	display: none;
+}
+
+ .equipe:hover img {
+	 -webkit-transform: scale(1.5);
+	 -ms-transform: scale(1.5);
+	 transform: scale(1.5)
+  }
+div.div_img_accueil{
+    display: none;
+} 
+
+.stories {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+div.div_img_accueil:after {
+    content: attr(data-zagolovok);
+    display: none;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .column1 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	column-count: 1;
+	column-gap: 2em;
+}
+
+.p_caracterictique:hover {
+	/*transform: rotate3d(0, 1, 0, 90deg);*/
+	transform: none;
+}
+
+}  
+/*Version Desktop*/
+
+@media only screen and (min-width: 1024px) {
+
+/*
+Montrer l'image principale en version desktop
+*/
+header.header_grand {
+    width: 100%;
+	height:30em;
+	position: relative;
+}
+.recherche {
+	margin-top: 3%;
+	margin-bottom: 2%;
+	margin-left: 0;
+}
+
+.search_input {
+	width:20%;
+	height: 3em;
+ }
+
+.search_input:hover {
+
+ border-radius: 5px;
+}
+
+/*Images responsives*/
+img{ max-width:100%; height:auto;}
+.img_accueil {
+	display: block;
+	clear: right;
+	width:97%;
+	height:auto;
+	transition: 2s linear;
+}
+div.div_img_accueil{
+	display: block;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+/*Opacity pour l'image principale avec hover*/
+
+.img_accueil:hover {
+  opacity: .2;
+  border-radius: 20px;
+  
+}
+/*
+Une boite de message qui s"affiche à hover sur page principale et image principale
+*/
+div.div_img_accueil:before {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #A0A9B1 inset;
+    content: attr(data-title);
+    font-family: 'Trajan Pro', Arial, Helvetica, sans-serif; 
+    font-size: 32px;
+    height: 48px;
+    line-height: 48px;
+    opacity: 0;
+    padding: 0 10px;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+div.div_img_accueil:hover:before {
+    right: 200px;
+    opacity: 1;
+    top: 150px;
+}
+
+div.div_img_accueil:hover img {
+    width: 100%;
+  }
+
+div.div_img_accueil:after {
+	display: block;
+    content: attr(data-zagolovok);
+    display: block;
+    font-weight: bold;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: center;
+  }
+
+/*
+menu d'accueil
+*/
+
+.logo {
+	/*text-align: left;*/
+    display: block;
+	width:180px;
+	margin: 10px;
+	position: absolute;
+	
+}
+/*annimation de logo*/
+
+#img_transform {
+	transition: transform 3s linear;
+
+}
+
+#img_transform:hover {
+	transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.img_logo {
+	margin-left:-10%;
+	/*transform: rotateY(45deg);*/
+}
+.topnav {
+
+	text-align: right;
+	height: 100px;
+	line-height: 100px;
+
+}
+
+.menu {
+	width: 95%;
+	text-align: right;
+	margin-right: 0;
+}
+
+/* Style the topnav links */
+.menu a {
+	display: inline-block;
+    color: #f2f2f2;
+    margin: 0 20px;
+    line-height: 100px;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-bottom: none;
+    text-align: right;
+}
+/* Changer la couleur de hover */
+.topnav a:hover {
+    color: black;
+}
+/* Taille pour hambourger menu, cacher checkbox et hambourger */
+label {
+    
+	margin: 0 40px 0 0;
+	font-size:50px;
+	line-height: 100px;
+	display: none;
+}
+#toggle {
+
+	display:none;
+}
+
+/* Style pour les images et moduls pour l'équipe */
+
+h1.h1_equipe {
+	text-align: center;
+	padding-bottom: 2em;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+/*title de moduls */
+
+h1.started_story {
+
+	color: black;
+}
+
+.stories {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+  
+	/*padding-top: 5%*/
+  }
+  .equipe {
+	 width: 100%;
+	 overflow: hidden;
+	 margin: 1em;
+	 z-index:1;
+	 color: white;
+	 /*cursor: pointer;*/
+	 
+   }
+   .personne {
+  
+	color:white;
+	text-decoration: none;
+	font-family: TradeGothicLTCom-Bold, Arial,  sans-serif;
+	text-transform: uppercase;
+   }
+
+   /* title des images d'equipe */
+
+  span.title {
+	 position: absolute;
+	 bottom: 0;
+	 left:0;
+	 right:0;
+	 background: black;
+	 opacity: 0.6;
+	 width: 100%;
+	 padding:1em 0;
+	 text-align: center;
+	 z-index: 120000;
+	  }
+  
+  .outer-wrapper {
+	 width:100%;
+	 height: 0;
+	 padding-top: 100%;
+	 position: relative
+  }
+  
+  .outer-wrapper .inner-wrapper {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 right: 0;
+	 bottom: 0
+  }
+  
+  .outer-wrapper img {
+	object-fit: cover;
+	 width: 100%;
+	 height: 100%;
+	 z-index: 2;
+  }
+  
+  .story.outer-wrapper {
+	 box-shadow: inset 0 0 1px #004d34;
+	 overflow: hidden
+  }
+  
+  .equipe img {
+	 -webkit-transition: 1s all;
+	 transition: 1s all
+  }
+  
+  .equipe:hover img {
+	 -webkit-transform: scale(1.5);
+	 -ms-transform: scale(1.5);
+	 transform: scale(1.5)
+  }
+	 
+  .stage {
+	 /*position: relative;*/
+	 display: block;
+	 height: 800px; 
+	 padding-left: 15%;
+  
+	 }
+
+/* Style des modals après click à les images des membres d'equipe */
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	text-align: left;
+	font-size: 13px;
+	
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div, .modalDialog2 > div,  .modalDialog3 > div{
+	width: 60%;
+	color: black;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+span.question {
+	font-family: TradeGothicLTCom-Bold;
+    color: #c02820;
+    box-sizing: border-box;
+    font-weight: bolder;
+    
+}
+
+span.answer {
+	color: #593e31;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 5%;
+	text-align: center;
+	top: 5%;
+	width: 28px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+.modalDialog2 {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	text-align: left;
+	font-size: 13px;
+	
+}
+
+.modalDialog2:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog3 {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	text-align: left;
+	font-size: 13px;
+}
+
+.modalDialog3:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.description {
+
+width: 100%;
+height: auto;
+}
+
+.column3 {
+	/* background-color: white; */
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	/* background-color: white; */
+	column-count: 3;
+	column-gap: 2em;
+}
+
+.h1_specialite {
+	text-align: center;
+	margin: 2%;
+}
+
+.p_caracterictique:hover {
+	transform: rotate3d(0, 1, 0, 90deg);
+	/*transform: none;*/
+}
+
+.h1_forme {
+
+		text-align: center;
+		margin: 2%;
+
+}
+
+}
+
+
+
